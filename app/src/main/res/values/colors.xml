@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#494949</color>
+    <color name="colorAccent">#f1f1f1</color>
+    <color name="white">#FFffff</color>
+    <color name="black">#0f0d0d</color>
+    <color name="imageblack">#a6a6a6</color>
+    <color name="View_line">#EAEBED</color>
+    <color name="transparent">#00000000</color>
+    <color name="sort_by_bg">#74f6f6f6</color>
+    <color name="activity_bg">#f6f6f6</color>
+    <color name="circular_pic_border">#5f707070</color>
+    <color name="edit_phn">#a62c8d</color>
+    <color name="light_weight_gray">#99000000</color>
+</resources>

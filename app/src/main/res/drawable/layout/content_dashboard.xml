@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Dashboard"
+    android:background="@color/colorAccent"
+    tools:showIn="@layout/app_bar_dashboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/aktuImage"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toStartOf="@+id/aktuResultImage"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/aktu" />
+
+                    <ImageView
+                        android:id="@+id/aktuResultImage"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toStartOf="@+id/upScholarshipImage"
+                        app:layout_constraintStart_toEndOf="@+id/aktuImage"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/oneview"
+                        tools:ignore="MissingConstraints" />
+
+                    <ImageView
+                        android:id="@+id/upScholarshipImage"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toStartOf="@+id/codeshefImage"
+                        app:layout_constraintStart_toEndOf="@+id/aktuResultImage"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/scholarship" />
+
+                    <ImageView
+                        android:id="@+id/codeshefImage"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toStartOf="@+id/tutorialsPointImage"
+                        app:layout_constraintStart_toEndOf="@+id/upScholarshipImage"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/codeshef" />
+
+                    <ImageView
+                        android:id="@+id/moreImage"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tutorialsPointImage"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_menu" />
+
+                    <customfonts.MyTextView_Roboto_Bold
+                        android:id="@+id/aktuTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:text="aktu"
+                        android:textSize="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/aktuImage"
+                        app:layout_constraintStart_toStartOf="@+id/aktuImage"
+                        app:layout_constraintTop_toBottomOf="@+id/aktuImage" />
+
+                    <customfonts.MyTextView_Roboto_Bold
+                        android:id="@+id/aktuResultTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:text="aktu result"
+                        android:textSize="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/aktuResultImage"
+                        app:layout_constraintStart_toStartOf="@+id/aktuResultImage"
+                        app:layout_constraintTop_toBottomOf="@+id/aktuResultImage" />
+
+                    <customfonts.MyTextView_Roboto_Bold
+                        android:id="@+id/upScholarshipTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:text="up scholarship"
+                        android:textSize="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/upScholarshipImage"
+                        app:layout_constraintStart_toStartOf="@+id/upScholarshipImage"
+                        app:layout_constraintTop_toBottomOf="@+id/upScholarshipImage" />
+
+                    <customfonts.MyTextView_Roboto_Bold
+                        android:id="@+id/codeshefTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:text="codeshef"
+                        android:textSize="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/codeshefImage"
+                        app:layout_constraintStart_toStartOf="@+id/codeshefImage"
+                        app:layout_constraintTop_toBottomOf="@+id/codeshefImage" />
+
+                    <customfonts.MyTextView_Roboto_Bold
+                        android:id="@+id/moreTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:text="more"
+                        android:textSize="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/moreImage"
+                        app:layout_constraintStart_toStartOf="@+id/moreImage"
+                        app:layout_constraintTop_toBottomOf="@+id/moreImage" />
+
+                    <ImageView
+                        android:id="@+id/tutorialsPointImage"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toStartOf="@+id/moreImage"
+                        app:layout_constraintStart_toEndOf="@+id/codeshefImage"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@mipmap/tutorialspoint" />
+
+                    <customfonts.MyTextView_Roboto_Bold
+                        android:id="@+id/tutorialsPointTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginBottom="2dp"
+                        android:text="tutorialspoint"
+                        android:textSize="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/tutorialsPointImage"
+                        app:layout_constraintStart_toStartOf="@+id/tutorialsPointImage"
+                        app:layout_constraintTop_toBottomOf="@+id/tutorialsPointImage"
+                        app:layout_constraintVertical_bias="0.6" />
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="16dp"
+                android:clipToPadding="false"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:overScrollMode="never"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:paddingBottom="15dp"
+                app:ci_drawable="@drawable/ic_circular1"
+                app:ci_drawable_unselected="@drawable/ic_circular"
+                app:ci_height="5dp"
+                app:ci_width="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/viewpager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewpager">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#e3e3e3" />
+
+                <customfonts.MyTextView_Roboto_Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="8dp"
+                    android:text="go_by_brands"
+                    android:textColor="@color/black"
+                    android:textSize="13.3sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image"
+                            android:layout_width="match_parent"
+                            android:layout_height="73dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:src="@drawable/man"
+                            app:civ_border_color="@color/circular_pic_border"
+                            app:civ_border_width="0.7dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image1"
+                            android:layout_width="match_parent"
+                            android:layout_height="73dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:src="@drawable/man"
+                            app:civ_border_color="@color/circular_pic_border"
+                            app:civ_border_width="0.7dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image2"
+                            android:layout_width="match_parent"
+                            android:layout_height="73dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:src="@drawable/man"
+                            app:civ_border_color="@color/circular_pic_border"
+                            app:civ_border_width="0.7dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/profile_image3"
+                            android:layout_width="match_parent"
+                            android:layout_height="73dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:src="@drawable/man"
+                            app:civ_border_color="@color/circular_pic_border"
+                            app:civ_border_width="0.7dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

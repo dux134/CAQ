@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Current Affair Quiz</string>
+
+    <string name="cutprice"><strike>$ 45.99</strike></string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="ads">ca-app-pub-6172703407759908/6136887925</string>
+
+</resources>
